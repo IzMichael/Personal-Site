@@ -5,17 +5,10 @@ var LastNameIns = "YOUR LAST NAME HERE";
 var MainUsernameIns = "@YOUR MAIN USERNAME HERE";
 var Email = "YOUR@EMAIL.HERE"
 
-// Social Modules
-var GitHubLink = true;
-var TwitterLink = true;
-var BlogLink = true;
-var FacebookLink = true;
-
 // Social Data
 var GitHubIns = "YOUR USERNAME HERE";
 var TwitterIns = "YOUR USERNAME HERE";
 var BlogIns = "YOUR FULL URL HERE";
-var FacebookIns = "YOUR FULL URL HERE";
 
 // Other Text
 var Subtitle = "And this is my website."
@@ -59,7 +52,6 @@ function onLoad() {
     var github = document.getElementById("github");
     var twitter = document.getElementById("twitter");
     var blog = document.getElementById("blog");
-    var facebook = document.getElementById("facebook");
     // Social Modules
     if (GitHubLink = false) {
         github.classList.add("hidden")
@@ -70,14 +62,10 @@ function onLoad() {
     if (BlogLink = false) {
         blog.classList.add("hidden")
     }
-    if (FacebookLink = false) {
-        facebook.classList.add("hidden")
-    }
     // Social Data
     github.setAttribute("href", "https://github.com/" + GitHubIns);
     twitter.setAttribute("href", "https://twitter.com/" + TwitterIns);
     blog.setAttribute("href", BlogIns);
-    facebook.setAttribute("href", FacebookIns);
 
     // Other Text
     var subtitleSection = document.getElementById("subtitle")
